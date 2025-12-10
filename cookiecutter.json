@@ -1,6 +1,7 @@
 {
   "project_name": "Loan Approval Prediction",
   "project_slug": "loan_prediction_project",
-  "author_name": "Your Name",
-  "python_version": "3.10"
+  "author_name": "Mahendra Jangid",
+  "python_version": "3.10",
+  "use_xgboost": "1 (Logistic Regression), 2 (XGBoost)"
 }

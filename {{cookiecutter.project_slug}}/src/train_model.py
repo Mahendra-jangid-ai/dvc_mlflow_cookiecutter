@@ -7,7 +7,7 @@ from xgboost import XGBClassifier
 import pandas as pd
 
 
-def train_loan_model_with_autolog(path="data/processed/loan_preprocessed.csv", 
+def train_loan_model_with_autolog(path="../data/processed/loan_preprocessed.csv", 
                                   use_xgboost=1):
 
     mlflow.set_tracking_uri("http://127.0.0.1:5000")
@@ -52,10 +52,10 @@ def train_loan_model_with_autolog(path="data/processed/loan_preprocessed.csv",
         run_id = run.info.run_id
 
         mlflow.register_model(
-            model_uri=f"runs:/7b32f546410d4dd8a7075c7361b427a8/model",
+            model_uri=f"runs:/{run_id}/model",
             name="LoanApprovalModel11"
         )
 
     return model
 
-model = train_loan_model_with_autolog(use_xgboost=1)
+model = train_loan_model_with_autolog(use_xgboost={{cookiecutter.use_xgboost}})

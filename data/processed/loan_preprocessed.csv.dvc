@@ -1,5 +1,0 @@
-outs:
-- md5: e6c4aff9e688d37b880f8c1416fded8c
-  size: 57093
-  hash: md5
-  path: loan_preprocessed.csv
