@@ -7,7 +7,7 @@ from xgboost import XGBClassifier
 import pandas as pd
 
 
-def train_loan_model_with_autolog(path="../data/processed/loan_preprocessed.csv", 
+def train_loan_model_with_autolog(path="data/processed/loan_preprocessed.csv", 
                                   use_xgboost=1):
 
     mlflow.set_tracking_uri("http://127.0.0.1:5000")
