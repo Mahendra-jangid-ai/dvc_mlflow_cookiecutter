@@ -1,0 +1,62 @@
+artifact_path: mlflow-artifacts:/1/models/m-9d30bd3e3e984f7f8a81773b07904e9c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+is_signature_from_type_hint: false
+mlflow_version: 3.7.0
+model_id: m-9d30bd3e3e984f7f8a81773b07904e9c
+model_size_bytes: 2023
+model_uuid: m-9d30bd3e3e984f7f8a81773b07904e9c
+prompts: null
+run_id: 2e2d54521f4947c6966757adc1619034
+signature:
+  inputs: '[{"type": "double", "name": "age", "required": true}, {"type": "double",
+    "name": "income", "required": true}, {"type": "double", "name": "credit_score",
+    "required": true}, {"type": "double", "name": "gender_Male", "required": true},
+    {"type": "double", "name": "occupation_Analyst", "required": true}, {"type": "double",
+    "name": "occupation_Architect", "required": true}, {"type": "double", "name":
+    "occupation_Artist", "required": true}, {"type": "double", "name": "occupation_Banker",
+    "required": true}, {"type": "double", "name": "occupation_Chef", "required": true},
+    {"type": "double", "name": "occupation_Consultant", "required": true}, {"type":
+    "double", "name": "occupation_Dentist", "required": true}, {"type": "double",
+    "name": "occupation_Designer", "required": true}, {"type": "double", "name": "occupation_Doctor",
+    "required": true}, {"type": "double", "name": "occupation_Editor", "required":
+    true}, {"type": "double", "name": "occupation_Electrician", "required": true},
+    {"type": "double", "name": "occupation_Engineer", "required": true}, {"type":
+    "double", "name": "occupation_HR", "required": true}, {"type": "double", "name":
+    "occupation_IT", "required": true}, {"type": "double", "name": "occupation_Lawyer",
+    "required": true}, {"type": "double", "name": "occupation_Manager", "required":
+    true}, {"type": "double", "name": "occupation_Marketing", "required": true}, {"type":
+    "double", "name": "occupation_Musician", "required": true}, {"type": "double",
+    "name": "occupation_Nurse", "required": true}, {"type": "double", "name": "occupation_Pharmacist",
+    "required": true}, {"type": "double", "name": "occupation_Photographer", "required":
+    true}, {"type": "double", "name": "occupation_Pilot", "required": true}, {"type":
+    "double", "name": "occupation_Professor", "required": true}, {"type": "double",
+    "name": "occupation_Programmer", "required": true}, {"type": "double", "name":
+    "occupation_Psychologist", "required": true}, {"type": "double", "name": "occupation_Realtor",
+    "required": true}, {"type": "double", "name": "occupation_Receptionist", "required":
+    true}, {"type": "double", "name": "occupation_Researcher", "required": true},
+    {"type": "double", "name": "occupation_Sales", "required": true}, {"type": "double",
+    "name": "occupation_Salesman", "required": true}, {"type": "double", "name": "occupation_Server",
+    "required": true}, {"type": "double", "name": "occupation_Software", "required":
+    true}, {"type": "double", "name": "occupation_Student", "required": true}, {"type":
+    "double", "name": "occupation_Stylist", "required": true}, {"type": "double",
+    "name": "occupation_Teacher", "required": true}, {"type": "double", "name": "occupation_Veterinarian",
+    "required": true}, {"type": "double", "name": "occupation_Writer", "required":
+    true}, {"type": "double", "name": "marital_status_Single", "required": true},
+    {"type": "double", "name": "education_level", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-12-10 09:49:19.766889'
